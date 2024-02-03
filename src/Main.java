@@ -6,9 +6,11 @@ public class Main {
 //        obj.learnList();
 
         //All about LinkedList
-        LinkedListClass objclass = new LinkedListClass();
-        objclass.learnLinkedList();
+//        LinkedListClass objclass = new LinkedListClass();
+//        objclass.learnLinkedList();
 
+        VectorClass objvector = new VectorClass();
+        objvector.learnVector();
 
 
 
