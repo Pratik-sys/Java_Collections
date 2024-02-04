@@ -28,5 +28,5 @@ public class VectorClass {
         animals.clear();
         System.out.println("Vector after clear(): " + animals);
     }
-    
+
 }
