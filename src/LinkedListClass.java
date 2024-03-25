@@ -1,6 +1,4 @@
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
 
 public class LinkedListClass {
 
@@ -31,6 +29,7 @@ public class LinkedListClass {
         //accessing ele
         System.out.println(linkedList.get(4));
 
+//------------------------------------------------------------------------------------------
 
         System.out.println("Linked list as queue");
 
@@ -49,24 +48,5 @@ public class LinkedListClass {
         //.addFirst() -> add ele to first place in linked list
         linkedList.addFirst(1);
         System.out.println(linkedList);
-
-        List<Integer> al = new LinkedList<>();
-        for(int i=0; i <10 ; i++ ){
-            al.add(i);
-        }
-        Iterator<Integer> itr = al.iterator();
-
-        while (itr.hasNext()){
-            int i = itr.next();
-//            System.out.println(i);
-            if(i %2 !=0) {
-                itr.remove();
-            }
-        }
-        System.out.println( al);
-
-
-
-
     }
 }
