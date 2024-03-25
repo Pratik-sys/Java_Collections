@@ -1,3 +1,4 @@
+import java.util.Enumeration;
 import java.util.Vector;
 
 public class VectorClass {
@@ -27,6 +28,22 @@ public class VectorClass {
         // Using clear()
         animals.clear();
         System.out.println("Vector after clear(): " + animals);
+    }
+
+    public void vectorEnumeration(){
+
+        Vector<Integer> v = new Vector<>();
+
+        for(int i=0; i<20; i++){
+            v.add(i);
+        }
+        System.out.println("Vector represent as :" + v);
+        Enumeration<Integer> venum = v.elements();
+        while (venum.hasMoreElements()){
+            int j = (int) venum.nextElement();
+            System.out.println(j);
+        }
+
     }
 
 }

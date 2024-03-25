@@ -1,8 +1,11 @@
+import com.sun.source.tree.WhileLoopTree;
+
+import java.util.Enumeration;
 import java.util.HashMap;
 
 public class HashMapClass {
 
-    public  void  learnHashMap(){
+    public void learnHashMap() {
 
         HashMap<Integer, String> listitems = new HashMap<>();
 
@@ -12,10 +15,7 @@ public class HashMapClass {
         listitems.put(4, "Lentils");
         listitems.put(5, "Sugar");
         listitems.put(6, "Salt");
-        System.out.println( listitems);
-
-        System.out.println( listitems.values());
-
-
+        System.out.println(listitems);
+        System.out.println(listitems.values());
     }
 }
