@@ -21,7 +21,8 @@ public class Main {
 //        // All about hashmap
         HashMapClass objhash = new HashMapClass();
 //        objhash.learnHashMap();
-            objhash.enumerationHashMap();
+            objhash.learnHashTable();
+
 //
 //        // All about Iterator
 //        IterFunctions objiter = new IterFunctions();

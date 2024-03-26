@@ -2,6 +2,7 @@ import com.sun.source.tree.WhileLoopTree;
 
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.Hashtable;
 
 public class HashMapClass {
 
@@ -18,4 +19,21 @@ public class HashMapClass {
         System.out.println(listitems);
         System.out.println(listitems.values());
     }
+    public void learnHashTable(){
+        Hashtable<Integer, Integer> ht = new Hashtable<>();
+
+        for(int i=0; i<=10; i++){
+            ht.put(i,i+1);
+        }
+        System.out.println("Hash table looks like: " + ht);
+
+        // Remove key from hashtable
+        ht.remove(10);
+        System.out.println("Hash table after removing key:10" + ht);
+
+        // prints values from hashtable
+        System.out.println(ht.values());
+    }
+
+
 }
