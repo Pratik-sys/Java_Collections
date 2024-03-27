@@ -23,7 +23,7 @@ public class HashMapClass {
         Hashtable<Integer, Integer> ht = new Hashtable<>();
 
         for(int i=0; i<=10; i++){
-            ht.put(i,i+1);
+            ht.put(i,i+10);
         }
         System.out.println("Hash table looks like: " + ht);
 
@@ -33,6 +33,15 @@ public class HashMapClass {
 
         // prints values from hashtable
         System.out.println(ht.values());
+
+        Enumeration et = ht.keys();
+
+        while (et.hasMoreElements()){
+            int k = (int) et.nextElement();
+            System.out.println("Keys are " +  k);
+            System.out.println("Value for those keys are " + k  + ":"  + ht.get(k));
+        }
+
     }
 
 
