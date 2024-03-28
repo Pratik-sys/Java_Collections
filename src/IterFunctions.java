@@ -24,12 +24,16 @@ public class IterFunctions {
         ArrayList<Integer> al = new ArrayList<>();
         for(int i = 0; i<=10; i++){
             al.add(i);
-            System.out.println("Array " + al);
         }
         ListIterator<Integer> lt = al.listIterator();
         while (lt.hasNext()){
             int j = lt.next();
-            System.out.println(j);
+            if(j % 2 == 0){
+                j++;
+                lt.set(j);
+                lt.add(j);
+            }
         }
+        System.out.println(al);
     }
 }
