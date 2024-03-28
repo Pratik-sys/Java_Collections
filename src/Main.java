@@ -19,14 +19,15 @@ public class Main {
 //        objstack.learnStack();
 //
 //        // All about hashmap
-        HashMapClass objhash = new HashMapClass();
+//        HashMapClass objhash = new HashMapClass();
 //        objhash.learnHashMap();
-            objhash.learnHashTable();
+//            objhash.learnHashTable();
 
 //
 //        // All about Iterator
-//        IterFunctions objiter = new IterFunctions();
-//        objiter.learnIter();
+        IterFunctions objiter = new IterFunctions();
+        objiter.learnIter();
+        objiter.listIter();
 //
 
 

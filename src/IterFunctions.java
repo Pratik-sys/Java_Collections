@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class IterFunctions {
 
@@ -17,5 +18,18 @@ public class IterFunctions {
             if(j%2 !=0){itr.remove();}
         }
         System.out.println("Even ele are: " + new_arr);
+    }
+
+    public  void listIter(){
+        ArrayList<Integer> al = new ArrayList<>();
+        for(int i = 0; i<=10; i++){
+            al.add(i);
+            System.out.println("Array " + al);
+        }
+        ListIterator<Integer> lt = al.listIterator();
+        while (lt.hasNext()){
+            int j = lt.next();
+            System.out.println(j);
+        }
     }
 }
